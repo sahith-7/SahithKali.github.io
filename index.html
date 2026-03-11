@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sahith Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="mee.png">
+<span>SAHITH KALI</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+<li class="git">
+<a href="https://github.com/sahith-7" target="_blank">
+GitHub
+</a>
+</li>
+<li class="mail">
+<a href="https://mail.google.com/mail/u/0/?hl=en#advanced-search/to=sahithkali%40gmail.com&query=in%3Asent&isrefinement=true&todisplay=Sahith+Kali" target="_blank">
+MAIL
+</a>
+</li>
+
+<li class="linkedin">
+<a href="https://www.linkedin.com/in/sahith-kali-85a5b7354" target="_blank">
+LinkedIn
+</a>
+</li>
+
+</ul>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+</nav>
+
+
+<!-- MAIN SECTION -->
+
+<div class="container">
+
+<!-- ABOUT ME -->
+
+<div class="cert-row">
+
+<div class="cert-image" onclick="toggleDetails(0)">
+<img src="profile.png">
+</div>
+
+<div class="details">
+
+<h3>About Me</h3>
+
+<p>
+I am Sahith Kali from Uttaranchal University, a Computer Science student passionate about building innovative technology solutions. I enjoy working with web development, artificial intelligence, and interactive learning platforms. Currently, I am developing projects that combine education and gaming to make learning more engaging.
+</p>
+
+<button onclick="toggleDetails(0)">Know More</button>
+
+<div class="more">
+
+<p>Skills Learned:</p>
+
+<ul>
+<li>Frontend Development</li>
+<li>Python</li>
+<li>Java (Beginner)</li>
+<li>Problem Solving</li>
+<li>Creative Content Writing</li>
+</ul>
+
+<div class="contact-box">
+
+<h3>Contact Info</h3>
+
+<p>Email: sahithkali@gmail.com</p>
+<p>Phone: +91 8919439355</p>
+
+<div class="social-links">
+<a href="https://www.linkedin.com/in/sahith-kali-85a5b7354" target="_blank">LinkedIn</a>
+<br>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RESUME -->
+
+<div class="cert-row reverse">
+
+<div class="cert-image" onclick="toggleDetails(1)">
+<img src="resume.png">
+</div>
+
+<div class="details">
+
+<h3>Resume</h3>
+
+<p>
+Computer Science student specializing in Artificial Intelligence and Machine Learning. Passionate about developing technology solutions that combine AI, programming, and real-world applications. I focus on projects that make learning engaging through educational gaming and interactive platforms.
+</p>
+
+<button onclick="toggleDetails(1)">My Works</button>
+
+<div class="more">
+
+<ul>
+
+<li>Contributed a chapter in AI for Plant Modeling and Simulation</li>
+
+<li>
+<a href="https://doi.org/10.55938/wlp.v2i7.310" target="_blank">
+DOI of the chapter
+</a>
+</li>
+
+<li>
+Developing a Gamified Web App connecting Classic Games with STEM concepts
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CERTIFICATE 1 -->
+
+<div class="cert-row">
+
+<div class="cert-image" onclick="toggleDetails(2)">
+<img src="international confrence.jpeg">
+</div>
+
+<div class="details">
+
+<h3>ICAISF Conference</h3>
+
+<p>
+Worked on real time datasets of software companies like Microsoft and Google to analyze the impact of Artificial Intelligence in the software industry.
+</p>
+
+<button onclick="toggleDetails(2)">More Info</button>
+
+<div class="more">
+
+<ul>
+<li>Collected data from major IT companies</li>
+<li>Identified trends where AI replaces repetitive tasks</li>
+<li>Studied how humans can be reinforced instead of replaced</li>
+</ul>
+
+<video controls>
+<source src="icaisfmp4.mp4">
+</video>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CERTIFICATE 2 -->
+
+<div class="cert-row reverse">
+
+<div class="cert-image" onclick="toggleDetails(3)">
+<img src="plant.jpeg">
+</div>
+
+<div class="details">
+
+<h3>Book Chapter Contribution</h3>
+
+<p>
+Studied machine learning libraries that monitor plant growth and environmental responses using automated observation systems.
+</p>
+
+<button onclick="toggleDetails(3)">More Info</button>
+
+<div class="more">
+
+<ul>
+
+<li>OpenCV measures plant growth</li>
+
+<li>Scikit-Learn predicts growth patterns</li>
+
+<li>Matplotlib visualizes plant growth data</li>
+
+<li>Studied plant responses under different environmental conditions</li>
+
+</ul>
+
+<button>
+<a href="https://doi.org/10.55938/wlp.v2i7.310" target="_blank">
+DOI
+</a>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT -->
+
+<div class="cert-row">
+
+<div class="cert-image" onclick="toggleDetails(4)">
+<img src="hakathon1.jpeg">
+</div>
+
+<div class="details">
+
+<h3>SALT Project</h3>
+
+<p>
+Strategy Assisted Learning Techniques is an educational gaming platform designed to combine classic games with STEM education concepts.
+</p>
+
+<button onclick="toggleDetails(4)">More Info</button>
+
+<div class="more">
+
+<ul>
+
+<li>Educational datasets like periodic table integrated into game mechanics</li>
+
+<li>Gamified learning environment for STEM concepts</li>
+
+<li>Accessible learning platform for students</li>
+
+</ul>
+
+<video controls>
+<source src="salt.mp4">
+</video>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
